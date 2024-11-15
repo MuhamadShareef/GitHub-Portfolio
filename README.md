@@ -132,21 +132,21 @@ Possible issues include missing data for certain trips, errors in ride duration 
 
 
 **Key Tasks**
-   **- Download and store data appropriately.**
+   - **Download and store data appropriately.**
 
    I’ve downloaded the last 12 months of Cyclistic trip data and organized it into a dedicated folder for easy access.
 
-   **- Identify how it’s organized.**
+   - **Identify how it’s organized.**
 
    The data is in monthly CSV files, structured in rows and columns with consistent headers.
    
 
-   **-Sort and filter the data.**
+   - **Sort and filter the data.**
 
    I’ll sort and filter the data to focus on relevant information, such as rider type and trip durations.
    
 
-   **- Determine the credibility of the data.**
+   - **Determine the credibility of the data.**
 
    After reviewing its source and structure, I’ve confirmed that the data is credible and suitable for analysis.
 
@@ -156,11 +156,11 @@ Possible issues include missing data for certain trips, errors in ride duration 
 
 I’ll provide a description of the data sources used:
 
-**- Source:** Cyclistic trip data from Motivate International Inc.
+- **Source:** Cyclistic trip data from Motivate International Inc.
 
-**- Format:** Monthly CSV files covering the last 12 months.
+- **Format:** Monthly CSV files covering the last 12 months.
 
-**- Content:** Includes columns such as trip start time, end time, duration, starting station, ending station, and rider type (casual or member).
+- **Content:** Includes columns such as trip start time, end time, duration, starting station, ending station, and rider type (casual or member).
 
 
 
