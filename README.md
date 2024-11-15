@@ -75,8 +75,8 @@ A clear, well-defined statement of the business task, supported by insights into
 ## Step 2: Prepare
 To uncover these insights, I’ll be using Cyclistic’s historical trip data. This data, covering the last 12 months, is publicly available and provided by Motivate International Inc. under an open license. The data allows me to explore customer usage patterns, helping identify trends and differences between casual riders and annual members. I'll use the Case Study Roadmap to organize and clean the data systematically.
 
-Case Study Roadmap – Prepare
-Guiding Questions
+**Case Study Roadmap – Prepare
+Guiding Questions**
 Where is your data located?
 The data is stored in a publicly accessible location and can be downloaded directly from Cyclistic’s partner site here.
 How is the data organized?
@@ -92,7 +92,7 @@ The dataset contains information about ride patterns, durations, and rider types
 Are there any problems with the data?
 Possible issues include missing data for certain trips, errors in ride duration (e.g., negative or unrealistically long times), and discrepancies in station names. These issues will be addressed during the cleaning process.
 
-Key Tasks
+**Key Tasks**
 Download and store data appropriately.
 I’ve downloaded the last 12 months of Cyclistic trip data and organized it into a dedicated folder for easy access.
 Identify how it’s organized.
@@ -107,19 +107,20 @@ Source: Cyclistic trip data from Motivate International Inc.
 Format: Monthly CSV files covering the last 12 months.
 Content: Includes columns such as trip start time, end time, duration, starting station, ending station, and rider type (casual or member).
 
-Step 3. Process (Data Cleaning)
+## Step 3. Process (Data Cleaning)
 Reference: 01-Data Combining.sql
 
-Goal: To prepare the data for analysis by ensuring accuracy, consistency, and completeness.
-Merging All Tables in BigQuery
+**Goal:** To prepare the data for analysis by ensuring accuracy, consistency, and completeness.
+**Merging All Tables in BigQuery**
 Since we are dealing with hundreds of thousands of rows, we cannot utilize Google sheets so we will do all of our analysis with SQL. Now that the tables are uploaded to BigQuery, we can start to merge them. 
 
-Steps to Resolve Incompatible Column Types
+**Steps to Resolve Incompatible Column Types**
 We need to make sure all the columns are formatted correctly to ensure a smooth combining of 12 sheets into one table. I checked column types in each table. I inspected the schema of all 12 tables to identify the columns causing a mismatch. 
-Standardize Data Types
+
+**Standardize Data Types**
 Once the problem was identified as a mismatch in the SCHEMA between tables, I standardized the data types using CAST function then a UNION ALL query to tie everything together. 
 
-Ensuring uniformity across all tables
+**Ensuring uniformity across all tables**
 To make the query more efficient and comprehensive, especially considering variations in column types (like INTEGER vs. STRING for start_station_id and end_station_id), I ensured uniformity across all tables. 
 Ensured all date and time columns are in the correct format and timezone to avoid inconsistencies during the analysis phase. Standardizing these formats will make the analysis process more reliable and easier to perform.
 SELECT 
@@ -141,28 +142,28 @@ FROM `leafy-sanctuary-412122.cyclistic_data.cyclistic_data_2019_q010`
 UNION ALL
 -- Repeat for all remaining tables
 
-Additional Steps in Data Cleaning and Preparation
+**Additional Steps in Data Cleaning and Preparation**
 Reference: 02- Data Exploration.sql 
 
-Checked the data types of all columns: Ensured that column data types are consistent and align with the expected schema to avoid errors during merging or analysis. 
+**Checked the data types of all columns:** Ensured that column data types are consistent and align with the expected schema to avoid errors during merging or analysis. 
 Counted NULL values for each column in the table: Identified missing data in each column to evaluate its impact on analysis and decide on appropriate handling methods.
-Removed rows with NULL values in key columns: Deleted rows with missing values in essential columns, such as ride_id or start_station_id, to maintain the integrity and reliability of the dataset.
-Checked for duplicate rows: Identified and removed duplicate entries to prevent overestimation or redundancy in the analysis.
+**Removed rows with NULL values in key columns:** Deleted rows with missing values in essential columns, such as ride_id or start_station_id, to maintain the integrity and reliability of the dataset.
+**Checked for duplicate rows:** Identified and removed duplicate entries to prevent overestimation or redundancy in the analysis.
 Checked if all ride_id values have the same length: Verified the consistency of ride_id lengths to ensure that each ride is uniquely and correctly identified.
-Checked for unique types in rideable_type: Analyzed the values in the rideable_type column to confirm that all ride types are valid and properly categorized.
+**Checked for unique types in rideable_type:** Analyzed the values in the rideable_type column to confirm that all ride types are valid and properly categorized.
 
-Created and exported a clean data table
+**Created and exported a clean data table**
 Reference: 03- Data Cleaning.sql
 
-Step 4: Analyze (Data Analysis)
+## Step 4: Analyze (Data Analysis)
 Reference: 04- Data Analysis.sql
-Goal: To derive insights and meaningful conclusions from the clean dataset.
+**Goal:** To derive insights and meaningful conclusions from the clean dataset.
 
-Exploring Descriptive Statistics:
-I start by examining key metrics like the average ride length, trip count, and ride type distribution. This helps identify general trends and gives us a broad overview of the dataset.
+**Exploring Descriptive Statistics:**
+I start by examining key metrics like the **average ride length, trip count**, and **ride type distribution**. This helps identify general trends and gives us a broad overview of the dataset.
 
-Analyzed the minimum and maximum dates in the dataset.
-Results: 
+**Analyzed the minimum and maximum dates in the dataset.**
+**Results:**
 
 
 Min_date
@@ -173,9 +174,9 @@ Max_date
 
 
 
-How do annual members and casual riders use Cyclistic bikes differently?
+**How do annual members and casual riders use Cyclistic bikes differently?**
 
-Results: 
+**Results:** 
 
 
 Casual Rider Average Time
@@ -184,7 +185,7 @@ Member Rider Average Time
 11.42 minutes
 
 
-Explored whether casual riders are more likely to ride on weekends compared to members.
+**Explored whether casual riders are more likely to ride on weekends compared to members.**
 I segmented the data by day of the week (weekdays vs. weekends) to uncover if casual riders tend to take longer trips on weekends compared to weekdays, and compare this to annual members’ behavior.
 
 
@@ -206,10 +207,10 @@ Weekend
 
 
 
-Comparative Analysis:
-I performed group comparisons between casual riders and annual members based on their trip characteristics.
+**Comparative Analysis:**
+I performed **group comparisons** between casual riders and annual members based on their trip characteristics.
 
-Trip length by rider 
+**Trip length by rider** 
 
 rider_type
 avg_trip_length_minutes
@@ -228,9 +229,9 @@ Member
 1,907,130
 
 
-I separated data by weekdays and weekends, and compared the average trip length and total rides for each group. This analysis will allow us to assess whether casual riders have longer or shorter trips compared to members, and whether this behavior differs on weekends.
+I separated data by **weekdays** and **weekends**, and compared the **average trip length** and **total rides** for each group. This analysis will allow us to assess whether casual riders have longer or shorter trips compared to members, and whether this behavior differs on weekends.
 
-Trip length by rider on weekends vs weekday 
+**Trip length by rider on weekends vs weekday** 
 
 rider_type
 day_type
@@ -265,16 +266,16 @@ Weekday
 
 
 
-Total number of trips per month by Rider
+**Total number of trips per month by Rider**
 
-Results in Tableau  
+**Results in Tableau**  
 
 
 
 As we can see, the most popular months are to no surprise, the summer months which start to peak around July and August. 
 
 
-Total number of trips per week
+**Total number of trips per week**
 Based on the analysis, the most popular week for riders is week 41. And we see the most popular weeks to ride on are between July through October. 
 
 trip_year
@@ -397,17 +398,17 @@ member
 
 
 
-Tableau: 
+**Results in Tableau:** 
 
 
 
 
-Analyzed peak hours of usage by rider type
+**Analyzed peak hours of usage by rider type**
 
-Results: 
+**Results:** 
 Conducted a peak hour usage analysis to identify the most active hours for casual riders and annual members. By extracting the hour from trip start times and grouping data by rider type, I determined that casual riders peak between 4 PM and 7 PM, while members exhibit a similar pattern, with a more pronounced peak at 5 PM. This insight highlights differences in rider behavior and provides a foundation for targeted marketing or operational adjustments.
 
-Top Results: 
+**Top Results:** 
 Member Riders
 hour_of_day
 rider_type
@@ -461,14 +462,14 @@ casual
 casual
 92961
 
-Results in Tableau: 
+**Results in Tableau:** 
 
 
 
 
-Average ride length per month
+**Average ride length per month**
 
-Results: 
+**Results:** 
 The analysis reveals interesting trends in average ride lengths across the months. The longest average ride lengths occur in July, which aligns with expectations due to the warm, summer weather encouraging outdoor activities. The trend begins to pick up in April, continues through May and June, and peaks in July. After July, ride lengths start to decline gradually as the year progresses into cooler months.
 
 
@@ -576,7 +577,7 @@ member
 
 
 
-Results in Tableau:
+**Results in Tableau:**
 
 
 
@@ -584,9 +585,9 @@ Results in Tableau:
 
 
 
-Average ride length per day of week
+**Average ride length per day of week**
 
-Results: 
+**Results:** 
 Ride lengths are longer during weekends, suggesting more recreational use of bikes, whereas weekdays see shorter, purpose-driven rides. These insights could inform targeted promotions or service adjustments based on rider behavior.
 
 day_of_week
@@ -612,28 +613,28 @@ Saturday
 
 
 
-Results in Tableau: 
+**Results in Tableau:** 
 
 
 
 
-Analyzed Popular Stations/Top Routes
-Tableau:
+**Analyzed Popular Stations/Top Routes**
+**Results in Tableau**:
 
 
 
 
-Results: 
+**Results:** 
 1. Aggregate by Top Stations or Routes: results-20241112-133926
 
 
-Analyze by Rider Type: Member
-Results: 
+**Analyze by Rider Type: Member
+Results:** 
 2. Analyze by Rider Type: Member - results-20241112-134338
 
 
-Rider Type: Member
-Top 10 Most Popular Stations/Routes 
+**Rider Type: Member**
+**Top 10 Most Popular Stations/Routes** 
 Rider Type: Member
 start_station_name
 end_station_name
@@ -671,7 +672,8 @@ Lake Shore Dr & North Blvd
 
 
 
-Tableau: Top Stations by Number of Rides (Horizontal Bar Chart)
+**Result in Tableau**:
+Top Stations by Number of Rides (Horizontal Bar Chart)
 
 
 
@@ -679,13 +681,13 @@ Tableau: Top Stations by Number of Rides (Horizontal Bar Chart)
 
 
 
-Analyze by Rider Type: Casual
-Results: 
+**Analyze by Rider Type: Casual
+Results:**
 2. Analyze by Rider Type: Casual - results-20241112-134713
 
 
-Rider Type: Casual
-Top 10 Most Popular Stations/Routes 
+**Rider Type: Casual**
+**Top 10 Most Popular Stations/Routes** 
 
 
 Rider Type: Casual
@@ -725,7 +727,7 @@ Theater on the Lake
 
 
 
-Tableau:
+**Results in Tableau**:
 
 
 
@@ -733,15 +735,15 @@ Tableau:
 
 
 
-Aggregate Popular Routes
+**Aggregate Popular Routes**
 Combined start and end station names into a single route and analyzed their popularity.
 Results: 
 3. Aggregate Popular Routes: results-20241112-134927
-Tableau:
+**Results in Tableau**:
 
 
 
-Summarize Results by Start Station 
+**Summarize Results by Start Station**
 
 Aggregated the data to see the total rides originating or ending at each station.
 Results: 
@@ -751,63 +753,63 @@ Tableau:
 
 
 
-Summarize Results by End Station 
-Results: 
+**Summarize Results by End Station 
+Results:**
 4. Summarize Results by End Station: results-20241112-135432
-Tableau:
+**Results in Tableau**:
 
 
 
-Step 5: Share 
-SQL Query:
-Data Visualization: 
+## Step 5: Share 
+**SQL Query:**
+**Data Visualization:** 
 
 Now that the data is processed, cleaned, and analyzed we can share our findings. I queried multiple data sets for the analysis and visualized them in Tableau. To answer the main question: How do annual members and casual riders use Cyclistic bikes differently?
 
-Key Insights: How Casual Riders and Annual Members Use Cyclistic Bikes Differently
-Ride Duration:
+## Key Insights: How Casual Riders and Annual Members Use Cyclistic Bikes Differently
+**Ride Duration:**
 Casual riders have significantly longer average trip durations (42.8 minutes) compared to annual members (11.42 minutes). This suggests casual riders may use bikes for recreational purposes, while members use them for commuting or short trips.
-Day and Time Preferences:
+**Day and Time Preferences:**
 Casual riders are more active on weekends, aligning with leisure activities.
 Members ride consistently throughout the week, peaking during commuting hours (e.g., 5 PM).
-Seasonal Trends:
+**Seasonal Trends:**
 Both groups ride more frequently during summer (June–August), but casual riders exhibit sharper increases, likely driven by favorable weather for recreation.
-Top Stations and Routes:
+**Top Stations and Routes:**
 Casual riders favor stations near tourist spots or recreational areas, while members prefer stations near transit hubs or workplaces.
-Peak Usage Hours:
+**Peak Usage Hours:**
 Casual riders’ trips peak between 4 PM and 7 PM, which overlaps with members’ peak usage. However, members exhibit a sharper peak at 5 PM, likely tied to commuting patterns.
-Recurring Behavior:
+**Recurring Behavior:**
 Members exhibit consistent behavior in ride frequency and timing, indicating habitual use, while casual riders demonstrate irregular, event-driven patterns.
 
 
-Step 6: Act 
-Actionable Recommendations
-Targeted Marketing Strategies:
-Recreational Appeal: Promote membership benefits for weekend riders, such as discounts for long rides or family packages.
-Seasonal Campaigns: Run summer promotions emphasizing cost savings with annual memberships compared to single-use pricing.
-Digital Media Strategies:
-Geotargeted Ads: Advertise near popular tourist locations and recreational hotspots highlighting the convenience and savings of becoming a member.
-Social Proof: Use testimonials or success stories of casual riders who transitioned to memberships for cost savings and added benefits.
-Personalized Membership Offers:
+## Step 6: Act 
+**Actionable Recommendations**
+**Targeted Marketing Strategies:**
+**Recreational Appeal:** Promote membership benefits for weekend riders, such as discounts for long rides or family packages.
+**Seasonal Campaigns:** Run summer promotions emphasizing cost savings with annual memberships compared to single-use pricing.
+**Digital Media Strategies:**
+**Geotargeted Ads:** Advertise near popular tourist locations and recreational hotspots highlighting the convenience and savings of becoming a member.
+**Social Proof:** Use testimonials or success stories of casual riders who transitioned to memberships for cost savings and added benefits.
+**Personalized Membership Offers:**
 Offer trial memberships with incentives, such as the first month free or free weekend rides for casual riders who register during peak seasons.
 Implement referral programs where existing members receive perks for converting casual riders to members.
-Operational Enhancements:
-Weekend Promotions: Provide discounts or promotional offers during weekends to nudge casual riders toward memberships.
-Station Placement: Expand stations in areas frequented by casual riders and offer exclusive member perks at those locations.
-Behavioral Nudges:
-Ride Analytics: Show casual riders data about their total spending and potential savings as members after completing a ride.
-Gamification: Introduce milestones or rewards for casual riders who increase their ride frequency, linking these achievements to discounted memberships.
+**Operational Enhancements:**
+**Weekend Promotions:** Provide discounts or promotional offers during weekends to nudge casual riders toward memberships.
+**Station Placement:** Expand stations in areas frequented by casual riders and offer exclusive member perks at those locations.
+**Behavioral Nudges:**
+**Ride Analytics:** Show casual riders data about their total spending and potential savings as members after completing a ride.
+**Gamification:** Introduce milestones or rewards for casual riders who increase their ride frequency, linking these achievements to discounted memberships.
 
 
-Next Steps
-Share Findings:
+**Next Steps**
+**Share Findings:**
 Present these insights and recommendations to the Cyclistic Executive Team using professional visualizations in Tableau.
 Highlight the potential ROI of converting casual riders into annual members using usage trends and financial implications.
-Implement A/B Testing:
+**Implement A/B Testing:**
 Test different marketing messages and promotional offers to determine the most effective strategies for casual rider conversion.
-Monitor and Evaluate:
+**Monitor and Evaluate:**
 Track the impact of implemented strategies using KPIs like the conversion rate of casual riders to annual members and overall membership growth.
 
-Executive Summary
+**Executive Summary**
 The data reveals that casual riders primarily use Cyclistic bikes for recreational purposes, while annual members use them for daily commuting. To convert casual riders into members, the company should emphasize cost savings, convenience, and exclusive perks through targeted campaigns and operational adjustments. These strategies align with observed rider behavior, ensuring a higher likelihood of adoption.
 By addressing these key areas, Cyclistic can capitalize on its data-driven insights to increase annual memberships, ensuring sustainable growth and success.
