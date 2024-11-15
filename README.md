@@ -74,9 +74,13 @@ To guide the development of the marketing program, we will focus on answering th
 
 The main goal is to build a profile for annual members and determine the best marketing strategies to convert casual riders. These insights will help the marketing team increase annual memberships.
 
+
+
 **Key Tasks**
 - Clearly define the business task.
 - Identify and understand the key stakeholders.
+
+  
 
 
 **Deliverable**
