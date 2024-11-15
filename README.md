@@ -125,15 +125,19 @@ Possible issues include missing data for certain trips, errors in ride duration 
 
 **Key Tasks**
 **- Download and store data appropriately.**
+
 I’ve downloaded the last 12 months of Cyclistic trip data and organized it into a dedicated folder for easy access.
 
 **- Identify how it’s organized.**
+
 The data is in monthly CSV files, structured in rows and columns with consistent headers.
 
 **-Sort and filter the data.**
+
 I’ll sort and filter the data to focus on relevant information, such as rider type and trip durations.
 
 **- Determine the credibility of the data.**
+
 After reviewing its source and structure, I’ve confirmed that the data is credible and suitable for analysis.
 
 
@@ -811,63 +815,100 @@ Tableau:
 
 
 
-**Summarize Results by End Station 
-Results:**
+**Summarize Results by End Station** 
+
+**Results:**
+
 4. Summarize Results by End Station: results-20241112-135432
+
 **Results in Tableau**:
 
 
 
 ## Step 5: Share 
+
 **SQL Query:**
 **Data Visualization:** 
 
 Now that the data is processed, cleaned, and analyzed we can share our findings. I queried multiple data sets for the analysis and visualized them in Tableau. To answer the main question: How do annual members and casual riders use Cyclistic bikes differently?
 
 ## Key Insights: How Casual Riders and Annual Members Use Cyclistic Bikes Differently
-**Ride Duration:**
+
+**- Ride Duration:**
 Casual riders have significantly longer average trip durations (42.8 minutes) compared to annual members (11.42 minutes). This suggests casual riders may use bikes for recreational purposes, while members use them for commuting or short trips.
-**Day and Time Preferences:**
+
+**- Day and Time Preferences:**
+
 Casual riders are more active on weekends, aligning with leisure activities.
 Members ride consistently throughout the week, peaking during commuting hours (e.g., 5 PM).
-**Seasonal Trends:**
+
+**- Seasonal Trends:**
+
 Both groups ride more frequently during summer (June–August), but casual riders exhibit sharper increases, likely driven by favorable weather for recreation.
-**Top Stations and Routes:**
+
+**- Top Stations and Routes:**
+
 Casual riders favor stations near tourist spots or recreational areas, while members prefer stations near transit hubs or workplaces.
-**Peak Usage Hours:**
+
+**- Peak Usage Hours:**
+
 Casual riders’ trips peak between 4 PM and 7 PM, which overlaps with members’ peak usage. However, members exhibit a sharper peak at 5 PM, likely tied to commuting patterns.
-**Recurring Behavior:**
+
+**- Recurring Behavior:**
+
 Members exhibit consistent behavior in ride frequency and timing, indicating habitual use, while casual riders demonstrate irregular, event-driven patterns.
 
 
 ## Step 6: Act 
+
 **Actionable Recommendations**
+
 **Targeted Marketing Strategies:**
+
 **Recreational Appeal:** Promote membership benefits for weekend riders, such as discounts for long rides or family packages.
+
 **Seasonal Campaigns:** Run summer promotions emphasizing cost savings with annual memberships compared to single-use pricing.
+
 **Digital Media Strategies:**
+
 **Geotargeted Ads:** Advertise near popular tourist locations and recreational hotspots highlighting the convenience and savings of becoming a member.
+
 **Social Proof:** Use testimonials or success stories of casual riders who transitioned to memberships for cost savings and added benefits.
+
 **Personalized Membership Offers:**
 Offer trial memberships with incentives, such as the first month free or free weekend rides for casual riders who register during peak seasons.
 Implement referral programs where existing members receive perks for converting casual riders to members.
+
 **Operational Enhancements:**
+
 **Weekend Promotions:** Provide discounts or promotional offers during weekends to nudge casual riders toward memberships.
+
 **Station Placement:** Expand stations in areas frequented by casual riders and offer exclusive member perks at those locations.
+
 **Behavioral Nudges:**
+
 **Ride Analytics:** Show casual riders data about their total spending and potential savings as members after completing a ride.
+
 **Gamification:** Introduce milestones or rewards for casual riders who increase their ride frequency, linking these achievements to discounted memberships.
 
 
 **Next Steps**
-**Share Findings:**
+
+**1- Share Findings:**
+
 Present these insights and recommendations to the Cyclistic Executive Team using professional visualizations in Tableau.
 Highlight the potential ROI of converting casual riders into annual members using usage trends and financial implications.
-**Implement A/B Testing:**
+
+**2- Implement A/B Testing:**
+
 Test different marketing messages and promotional offers to determine the most effective strategies for casual rider conversion.
-**Monitor and Evaluate:**
+
+**3- Monitor and Evaluate:**
+
 Track the impact of implemented strategies using KPIs like the conversion rate of casual riders to annual members and overall membership growth.
 
 **Executive Summary**
+
 The data reveals that casual riders primarily use Cyclistic bikes for recreational purposes, while annual members use them for daily commuting. To convert casual riders into members, the company should emphasize cost savings, convenience, and exclusive perks through targeted campaigns and operational adjustments. These strategies align with observed rider behavior, ensuring a higher likelihood of adoption.
+
 By addressing these key areas, Cyclistic can capitalize on its data-driven insights to increase annual memberships, ensuring sustainable growth and success.
