@@ -68,11 +68,14 @@ To guide the development of the marketing program, we will focus on answering th
 3. How can Cyclistic use digital media to influence casual riders to become members?
    
 **Guiding Objective**
+
 The main goal is to build a profile for annual members and determine the best marketing strategies to convert casual riders. These insights will help the marketing team increase annual memberships.
-Key Tasks
-Clearly define the business task.
-Identify and understand the key stakeholders.
-Deliverable
+
+**Key Tasks**
+- Clearly define the business task.
+- Identify and understand the key stakeholders.
+
+**Deliverable**
 A clear, well-defined statement of the business task, supported by insights into the differences between casual riders and annual members, as well as strategies for using digital media to influence behavior.
 
 
@@ -80,56 +83,77 @@ A clear, well-defined statement of the business task, supported by insights into
 
 
 ## Step 2: Prepare
-To uncover these insights, I’ll be using Cyclistic’s historical trip data. This data, covering the last 12 months, is publicly available and provided by Motivate International Inc. under an open license. The data allows me to explore customer usage patterns, helping identify trends and differences between casual riders and annual members. I'll use the Case Study Roadmap to organize and clean the data systematically.
 
-**Case Study Roadmap – Prepare
-Guiding Questions**
-Where is your data located?
+To uncover these insights, I’ll be using Cyclistic’s **historical trip data**. This data, covering the last 12 months, is publicly available and provided by Motivate International Inc. under an open license. The data allows me to explore customer usage patterns, helping identify trends and differences between casual riders and annual members. I'll use the Case Study Roadmap to organize and clean the data systematically.
+
+
+**Case Study Roadmap – Prepare**
+
+**Guiding Questions**
+
+**1- Where is your data located?**
 The data is stored in a publicly accessible location and can be downloaded directly from Cyclistic’s partner site here.
-How is the data organized?
+
+**2- How is the data organized?**
 The dataset is organized in CSV files, with each file representing trip data for a specific month. Each file contains columns such as trip start time, end time, ride duration, starting station, ending station, and rider type (casual or member).
-Are there issues with bias or credibility in this data? Does your data ROCCC?
+
+**3- Are there issues with bias or credibility in this data? Does your data ROCCC?**
+
 The data is provided by a reputable company, Motivate International Inc., ensuring credibility. However, potential biases may exist, such as underrepresentation of certain groups or missing data for specific timeframes or stations. I will evaluate the data to ensure it meets ROCCC standards (Reliable, Original, Comprehensive, Current, and Cited).
-How are you addressing licensing, privacy, security, and accessibility?
+**4- How are you addressing licensing, privacy, security, and accessibility?**
+
 The dataset is shared under an open license, allowing public use. Privacy concerns are minimal, as the data is aggregated and anonymized. I will handle the data responsibly and ensure it remains secure throughout the analysis process.
-How did you verify the data’s integrity?
+
+**5- How did you verify the data’s integrity?**
 I’ll review the dataset for consistency by checking for null values, duplicates, and outliers. I’ll also cross-reference the file metadata (e.g., date ranges) to ensure completeness.
-How does it help you answer your question?
+
+**6- How does it help you answer your question?**
 The dataset contains information about ride patterns, durations, and rider types, which directly aligns with the questions I’m answering, such as differences in usage between casual riders and annual members.
-Are there any problems with the data?
+
+**7- Are there any problems with the data?**
 Possible issues include missing data for certain trips, errors in ride duration (e.g., negative or unrealistically long times), and discrepancies in station names. These issues will be addressed during the cleaning process.
 
 **Key Tasks**
-Download and store data appropriately.
+**- Download and store data appropriately.**
 I’ve downloaded the last 12 months of Cyclistic trip data and organized it into a dedicated folder for easy access.
-Identify how it’s organized.
+
+**- Identify how it’s organized.**
 The data is in monthly CSV files, structured in rows and columns with consistent headers.
-Sort and filter the data.
+
+**-Sort and filter the data.**
 I’ll sort and filter the data to focus on relevant information, such as rider type and trip durations.
-Determine the credibility of the data.
+
+**- Determine the credibility of the data.**
 After reviewing its source and structure, I’ve confirmed that the data is credible and suitable for analysis.
-Deliverable
+
+
+**Deliverable**
+
 I’ll provide a description of the data sources used:
-Source: Cyclistic trip data from Motivate International Inc.
-Format: Monthly CSV files covering the last 12 months.
-Content: Includes columns such as trip start time, end time, duration, starting station, ending station, and rider type (casual or member).
+
+**- Source:** Cyclistic trip data from Motivate International Inc.
+**- Format:** Monthly CSV files covering the last 12 months.
+**- Content:** Includes columns such as trip start time, end time, duration, starting station, ending station, and rider type (casual or member).
+
 
 ## Step 3. Process (Data Cleaning)
 Reference: 01-Data Combining.sql
 
 **Goal:** To prepare the data for analysis by ensuring accuracy, consistency, and completeness.
-**Merging All Tables in BigQuery**
+**1- Merging All Tables in BigQuery**
 Since we are dealing with hundreds of thousands of rows, we cannot utilize Google sheets so we will do all of our analysis with SQL. Now that the tables are uploaded to BigQuery, we can start to merge them. 
 
-**Steps to Resolve Incompatible Column Types**
+**2- Steps to Resolve Incompatible Column Types**
 We need to make sure all the columns are formatted correctly to ensure a smooth combining of 12 sheets into one table. I checked column types in each table. I inspected the schema of all 12 tables to identify the columns causing a mismatch. 
 
-**Standardize Data Types**
+**3- Standardize Data Types**
 Once the problem was identified as a mismatch in the SCHEMA between tables, I standardized the data types using CAST function then a UNION ALL query to tie everything together. 
 
-**Ensuring uniformity across all tables**
+**4- Ensuring uniformity across all tables**
 To make the query more efficient and comprehensive, especially considering variations in column types (like INTEGER vs. STRING for start_station_id and end_station_id), I ensured uniformity across all tables. 
+
 Ensured all date and time columns are in the correct format and timezone to avoid inconsistencies during the analysis phase. Standardizing these formats will make the analysis process more reliable and easier to perform.
+
 SELECT 
   CAST(ride_id AS STRING) AS ride_id,
   CAST(rideable_type AS STRING) AS rideable_type,
@@ -149,18 +173,26 @@ FROM `leafy-sanctuary-412122.cyclistic_data.cyclistic_data_2019_q010`
 UNION ALL
 -- Repeat for all remaining tables
 
+
 **Additional Steps in Data Cleaning and Preparation**
 Reference: 02- Data Exploration.sql 
 
 **Checked the data types of all columns:** Ensured that column data types are consistent and align with the expected schema to avoid errors during merging or analysis. 
-Counted NULL values for each column in the table: Identified missing data in each column to evaluate its impact on analysis and decide on appropriate handling methods.
+
+**Counted NULL values for each column in the table:** Identified missing data in each column to evaluate its impact on analysis and decide on appropriate handling methods.
+
 **Removed rows with NULL values in key columns:** Deleted rows with missing values in essential columns, such as ride_id or start_station_id, to maintain the integrity and reliability of the dataset.
+
 **Checked for duplicate rows:** Identified and removed duplicate entries to prevent overestimation or redundancy in the analysis.
-Checked if all ride_id values have the same length: Verified the consistency of ride_id lengths to ensure that each ride is uniquely and correctly identified.
+
+**Checked if all ride_id values have the same length:** Verified the consistency of ride_id lengths to ensure that each ride is uniquely and correctly identified.
+
 **Checked for unique types in rideable_type:** Analyzed the values in the rideable_type column to confirm that all ride types are valid and properly categorized.
 
 **Created and exported a clean data table**
 Reference: 03- Data Cleaning.sql
+
+
 
 ## Step 4: Analyze (Data Analysis)
 Reference: 04- Data Analysis.sql
