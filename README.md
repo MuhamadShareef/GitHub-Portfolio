@@ -99,10 +99,9 @@ The data is stored in a publicly accessible location and can be downloaded direc
 The dataset is organized in CSV files, with each file representing trip data for a specific month. Each file contains columns such as trip start time, end time, ride duration, starting station, ending station, and rider type (casual or member).
 
 **3- Are there issues with bias or credibility in this data? Does your data ROCCC?**
-
 The data is provided by a reputable company, Motivate International Inc., ensuring credibility. However, potential biases may exist, such as underrepresentation of certain groups or missing data for specific timeframes or stations. I will evaluate the data to ensure it meets ROCCC standards (Reliable, Original, Comprehensive, Current, and Cited).
-**4- How are you addressing licensing, privacy, security, and accessibility?**
 
+**4- How are you addressing licensing, privacy, security, and accessibility?**
 The dataset is shared under an open license, allowing public use. Privacy concerns are minimal, as the data is aggregated and anonymized. I will handle the data responsibly and ensure it remains secure throughout the analysis process.
 
 **5- How did you verify the data’s integrity?**
