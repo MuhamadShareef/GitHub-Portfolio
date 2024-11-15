@@ -27,8 +27,11 @@ Data Analyst
 
 ## Quick links:
 01-Data Combining.sql
-02- Data Exploration.sql 
+
+02- Data Exploration.sql
+
 03- Data Cleaning.sql
+
 04- Data Analysis.sql
 
 ## Introduction 
