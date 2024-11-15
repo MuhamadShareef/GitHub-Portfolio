@@ -272,6 +272,7 @@ Member Rider Average Time
 
 
 **Explored whether casual riders are more likely to ride on weekends compared to members.**
+
 I segmented the data by day of the week (weekdays vs. weekends) to uncover if casual riders tend to take longer trips on weekends compared to weekdays, and compare this to annual members’ behavior.
 
 
@@ -294,6 +295,7 @@ Weekend
 
 
 **Comparative Analysis:**
+
 I performed **group comparisons** between casual riders and annual members based on their trip characteristics.
 
 **Trip length by rider** 
