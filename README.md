@@ -48,8 +48,11 @@ However, before implementing any strategies, I need to provide compelling data i
 
 ## Key Stakeholders
 Here are the main characters and stakeholders involved:
+
 Lily Moreno: Director of Marketing (Primary Stakeholder)
+
 Cyclistic Executive Team: (Primary Stakeholders)
+
 Cyclistic Marketing Analytics Team: (Secondary Stakeholders)
 
 
