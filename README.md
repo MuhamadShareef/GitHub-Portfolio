@@ -5,52 +5,52 @@ Data Analyst
 11/11/2024
 
 
-Case Study: How does a bike-share navigate speedy success? 
+# Case Study: How does a bike-share navigate speedy success? 
 
 
 
-Introduction 
+## Introduction 
 
-Step 1: Ask
+### Step 1: Ask
 
-Step 2: Prepare
+### Step 2: Prepare
 
-Step 3: Process
+### Step 3: Process
 
-Step 4: Analyze
+### Step 4: Analyze
 
+### Step 5: Share
 
-Step 5: Share
-
-Step 6: Act
-
+### Step 6: Act
 
 
-Quick links:
+
+## Quick links:
 01-Data Combining.sql
 02- Data Exploration.sql 
 03- Data Cleaning.sql
 04- Data Analysis.sql
-Introduction 
+
+## Introduction 
 In this case study, I’m going to be solving many real world scenarios a data analyst would solve. I’ll be working for Cyclistic, a fictional bike-share company, collaborating with various stakeholders.
 The objective of this case study is to answer key business questions using the six steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act. To stay on track, I’ll follow the Case Study Roadmap, which will guide me through the process with guiding questions and key tasks.
 
 
-Scenario
+## Scenario
 As a junior data analyst on the marketing analytics team at Cyclistic, a bike-share company based in Chicago, I’ve been tasked with answering an important business question:
 How can we convert casual riders into annual members?
 The director of marketing, Lily Moreno, believes that the future success of the company depends on maximizing the number of annual memberships. To support this vision, my team wants to understand how casual riders and annual members use Cyclistic bikes differently. The insights we uncover will be used to create a targeted marketing strategy aimed at converting casual riders into annual members.
 However, before implementing any strategies, I need to provide compelling data insights and professional visualizations to get approval from the Cyclistic Executive Team.
 
 
-Key Stakeholders
+## Key Stakeholders
 Here are the main characters and stakeholders involved:
 Lily Moreno: Director of Marketing (Primary Stakeholder)
 Cyclistic Executive Team: (Primary Stakeholders)
 Cyclistic Marketing Analytics Team: (Secondary Stakeholders)
 
 
-Step 1: Ask
+## Step 1: Ask
 Problem Statement
 The primary question we’re trying to solve is: How can we convert casual riders into annual members?
 To guide the development of the marketing program, we will focus on answering the following questions:
@@ -69,7 +69,7 @@ A clear, well-defined statement of the business task, supported by insights into
 
 
 
-Step 2: Prepare
+## Step 2: Prepare
 To uncover these insights, I’ll be using Cyclistic’s historical trip data. This data, covering the last 12 months, is publicly available and provided by Motivate International Inc. under an open license. The data allows me to explore customer usage patterns, helping identify trends and differences between casual riders and annual members. I'll use the Case Study Roadmap to organize and clean the data systematically.
 
 Case Study Roadmap – Prepare
