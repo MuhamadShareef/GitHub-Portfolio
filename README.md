@@ -67,7 +67,9 @@ The primary question we’re trying to solve is: How can we convert casual rider
 To guide the development of the marketing program, we will focus on answering the following questions:
 
 **1.** How do annual members and casual riders use Cyclistic bikes differently?
+
 **2.** Why would casual riders choose to purchase Cyclistic annual memberships?
+
 **3.** How can Cyclistic use digital media to influence casual riders to become members?
    
 **Guiding Objective**
