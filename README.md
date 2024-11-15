@@ -72,8 +72,9 @@ To guide the development of the marketing program, we will focus on answering th
 The main goal is to build a profile for annual members and determine the best marketing strategies to convert casual riders. These insights will help the marketing team increase annual memberships.
 
 **Key Tasks**
-. Clearly define the business task.
-. Identify and understand the key stakeholders.
+- Clearly define the business task.
+- Identify and understand the key stakeholders.
+
 
 **Deliverable**
 A clear, well-defined statement of the business task, supported by insights into the differences between casual riders and annual members, as well as strategies for using digital media to influence behavior.
@@ -113,6 +114,8 @@ The dataset contains information about ride patterns, durations, and rider types
 **7- Are there any problems with the data?**
 Possible issues include missing data for certain trips, errors in ride duration (e.g., negative or unrealistically long times), and discrepancies in station names. These issues will be addressed during the cleaning process.
 
+
+
 **Key Tasks**
 **- Download and store data appropriately.**
 I’ve downloaded the last 12 months of Cyclistic trip data and organized it into a dedicated folder for easy access.
@@ -125,6 +128,7 @@ I’ll sort and filter the data to focus on relevant information, such as rider 
 
 **- Determine the credibility of the data.**
 After reviewing its source and structure, I’ve confirmed that the data is credible and suitable for analysis.
+
 
 
 **Deliverable**
@@ -143,16 +147,21 @@ I’ll provide a description of the data sources used:
 Reference: 01-Data Combining.sql
 
 **Goal:** To prepare the data for analysis by ensuring accuracy, consistency, and completeness.
+
 **1- Merging All Tables in BigQuery**
+
 Since we are dealing with hundreds of thousands of rows, we cannot utilize Google sheets so we will do all of our analysis with SQL. Now that the tables are uploaded to BigQuery, we can start to merge them. 
 
 **2- Steps to Resolve Incompatible Column Types**
+
 We need to make sure all the columns are formatted correctly to ensure a smooth combining of 12 sheets into one table. I checked column types in each table. I inspected the schema of all 12 tables to identify the columns causing a mismatch. 
 
 **3- Standardize Data Types**
+
 Once the problem was identified as a mismatch in the SCHEMA between tables, I standardized the data types using CAST function then a UNION ALL query to tie everything together. 
 
 **4- Ensuring uniformity across all tables**
+
 To make the query more efficient and comprehensive, especially considering variations in column types (like INTEGER vs. STRING for start_station_id and end_station_id), I ensured uniformity across all tables. 
 
 Ensured all date and time columns are in the correct format and timezone to avoid inconsistencies during the analysis phase. Standardizing these formats will make the analysis process more reliable and easier to perform.
