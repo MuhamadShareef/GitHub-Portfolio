@@ -204,19 +204,32 @@ UNION ALL
 
 
 **Additional Steps in Data Cleaning and Preparation**
+
 Reference: 02- Data Exploration.sql 
 
-**Checked the data types of all columns:** Ensured that column data types are consistent and align with the expected schema to avoid errors during merging or analysis. 
+**Checked the data types of all columns:** 
 
-**Counted NULL values for each column in the table:** Identified missing data in each column to evaluate its impact on analysis and decide on appropriate handling methods.
+Ensured that column data types are consistent and align with the expected schema to avoid errors during merging or analysis. 
 
-**Removed rows with NULL values in key columns:** Deleted rows with missing values in essential columns, such as ride_id or start_station_id, to maintain the integrity and reliability of the dataset.
+**Counted NULL values for each column in the table:** 
 
-**Checked for duplicate rows:** Identified and removed duplicate entries to prevent overestimation or redundancy in the analysis.
+Identified missing data in each column to evaluate its impact on analysis and decide on appropriate handling methods.
 
-**Checked if all ride_id values have the same length:** Verified the consistency of ride_id lengths to ensure that each ride is uniquely and correctly identified.
+**Removed rows with NULL values in key columns:** 
 
-**Checked for unique types in rideable_type:** Analyzed the values in the rideable_type column to confirm that all ride types are valid and properly categorized.
+Deleted rows with missing values in essential columns, such as ride_id or start_station_id, to maintain the integrity and reliability of the dataset.
+
+**Checked for duplicate rows:** 
+
+Identified and removed duplicate entries to prevent overestimation or redundancy in the analysis.
+
+**Checked if all ride_id values have the same length:** 
+
+Verified the consistency of ride_id lengths to ensure that each ride is uniquely and correctly identified.
+
+**Checked for unique types in rideable_type:** 
+
+Analyzed the values in the rideable_type column to confirm that all ride types are valid and properly categorized.
 
 **Created and exported a clean data table**
 Reference: 03- Data Cleaning.sql
