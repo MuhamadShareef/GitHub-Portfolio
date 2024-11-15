@@ -891,9 +891,9 @@ Members exhibit consistent behavior in ride frequency and timing, indicating hab
 
 **1- Targeted Marketing Strategies:**
 
-**. Recreational Appeal:** Promote membership benefits for weekend riders, such as discounts for long rides or family packages.
+- **Recreational Appeal:** Promote membership benefits for weekend riders, such as discounts for long rides or family packages.
 
-**. Seasonal Campaigns:** Run summer promotions emphasizing cost savings with annual memberships compared to single-use pricing.
+- **Seasonal Campaigns:** Run summer promotions emphasizing cost savings with annual memberships compared to single-use pricing.
 
 **2- Digital Media Strategies:**
 
