@@ -853,8 +853,8 @@ Tableau:
 
 ## Step 5: Share 
 
-**SQL Query:**
-**Data Visualization:** 
+**. SQL Query:**
+**. Data Visualization:** 
 
 Now that the data is processed, cleaned, and analyzed we can share our findings. I queried multiple data sets for the analysis and visualized them in Tableau. To answer the main question: How do annual members and casual riders use Cyclistic bikes differently?
 
