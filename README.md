@@ -132,8 +132,11 @@ After reviewing its source and structure, I’ve confirmed that the data is cred
 I’ll provide a description of the data sources used:
 
 **- Source:** Cyclistic trip data from Motivate International Inc.
+
 **- Format:** Monthly CSV files covering the last 12 months.
+
 **- Content:** Includes columns such as trip start time, end time, duration, starting station, ending station, and rider type (casual or member).
+
 
 
 ## Step 3. Process (Data Cleaning)
