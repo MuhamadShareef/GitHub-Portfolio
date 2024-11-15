@@ -232,12 +232,15 @@ Verified the consistency of ride_id lengths to ensure that each ride is uniquely
 Analyzed the values in the rideable_type column to confirm that all ride types are valid and properly categorized.
 
 **Created and exported a clean data table**
+
 Reference: 03- Data Cleaning.sql
 
 
 
 ## Step 4: Analyze (Data Analysis)
 Reference: 04- Data Analysis.sql
+
+
 **Goal:** To derive insights and meaningful conclusions from the clean dataset.
 
 **Exploring Descriptive Statistics:**
