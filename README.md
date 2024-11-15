@@ -897,42 +897,42 @@ Members exhibit consistent behavior in ride frequency and timing, indicating hab
 
 **2- Digital Media Strategies:**
 
-**. Geotargeted Ads:** Advertise near popular tourist locations and recreational hotspots highlighting the convenience and savings of becoming a member.
+**- Geotargeted Ads:** Advertise near popular tourist locations and recreational hotspots highlighting the convenience and savings of becoming a member.
 
-**. Social Proof:** Use testimonials or success stories of casual riders who transitioned to memberships for cost savings and added benefits.
+**- Social Proof:** Use testimonials or success stories of casual riders who transitioned to memberships for cost savings and added benefits.
 
 **3- Personalized Membership Offers:**
-. Offer trial memberships with incentives, such as the first month free or free weekend rides for casual riders who register during peak seasons.
+- Offer trial memberships with incentives, such as the first month free or free weekend rides for casual riders who register during peak seasons.
 
-. Implement referral programs where existing members receive perks for converting casual riders to members.
+- Implement referral programs where existing members receive perks for converting casual riders to members.
 
 **4- Operational Enhancements:**
 
-**. Weekend Promotions:** Provide discounts or promotional offers during weekends to nudge casual riders toward memberships.
+**- Weekend Promotions:** Provide discounts or promotional offers during weekends to nudge casual riders toward memberships.
 
-**. Station Placement:** Expand stations in areas frequented by casual riders and offer exclusive member perks at those locations.
+**- Station Placement:** Expand stations in areas frequented by casual riders and offer exclusive member perks at those locations.
 
 **5- Behavioral Nudges:**
 
-**. Ride Analytics:** Show casual riders data about their total spending and potential savings as members after completing a ride.
+**- Ride Analytics:** Show casual riders data about their total spending and potential savings as members after completing a ride.
 
-**. Gamification:** Introduce milestones or rewards for casual riders who increase their ride frequency, linking these achievements to discounted memberships.
+**- Gamification:** Introduce milestones or rewards for casual riders who increase their ride frequency, linking these achievements to discounted memberships.
 
 
 **Next Steps**
 
 **1- Share Findings:**
 
-. Present these insights and recommendations to the Cyclistic Executive Team using professional visualizations in Tableau.
-. Highlight the potential ROI of converting casual riders into annual members using usage trends and financial implications.
+- Present these insights and recommendations to the Cyclistic Executive Team using professional visualizations in Tableau.
+- Highlight the potential ROI of converting casual riders into annual members using usage trends and financial implications.
 
 **2- Implement A/B Testing:**
 
-. Test different marketing messages and promotional offers to determine the most effective strategies for casual rider conversion.
+- Test different marketing messages and promotional offers to determine the most effective strategies for casual rider conversion.
 
 **3- Monitor and Evaluate:**
 
-. Track the impact of implemented strategies using KPIs like the conversion rate of casual riders to annual members and overall membership growth.
+- Track the impact of implemented strategies using KPIs like the conversion rate of casual riders to annual members and overall membership growth.
 
 **Executive Summary**
 
