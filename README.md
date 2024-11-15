@@ -49,21 +49,25 @@ However, before implementing any strategies, I need to provide compelling data i
 ## Key Stakeholders
 Here are the main characters and stakeholders involved:
 
-Lily Moreno: Director of Marketing (Primary Stakeholder)
+**Lily Moreno:** Director of Marketing (Primary Stakeholder)
 
-Cyclistic Executive Team: (Primary Stakeholders)
+**Cyclistic Executive Team:** (Primary Stakeholders)
 
-Cyclistic Marketing Analytics Team: (Secondary Stakeholders)
+**Cyclistic Marketing Analytics Team:** (Secondary Stakeholders)
 
 
 ## Step 1: Ask
-Problem Statement
+**Problem Statement**
+
 The primary question we’re trying to solve is: How can we convert casual riders into annual members?
+
 To guide the development of the marketing program, we will focus on answering the following questions:
-How do annual members and casual riders use Cyclistic bikes differently?
-Why would casual riders choose to purchase Cyclistic annual memberships?
-How can Cyclistic use digital media to influence casual riders to become members?
-Guiding Objective
+
+1. How do annual members and casual riders use Cyclistic bikes differently?
+2. Why would casual riders choose to purchase Cyclistic annual memberships?
+3. How can Cyclistic use digital media to influence casual riders to become members?
+   
+**Guiding Objective**
 The main goal is to build a profile for annual members and determine the best marketing strategies to convert casual riders. These insights will help the marketing team increase annual memberships.
 Key Tasks
 Clearly define the business task.
