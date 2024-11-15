@@ -486,7 +486,7 @@ member
 
 
 
-**Results in Tableau:** 
+**Results in Tableau** 
 
 
 
@@ -550,7 +550,7 @@ casual
 casual
 92961
 
-**Results in Tableau:** 
+**Results in Tableau** 
 
 
 
@@ -665,7 +665,7 @@ member
 
 
 
-**Results in Tableau:**
+**Results in Tableau**
 
 
 
@@ -701,13 +701,13 @@ Saturday
 
 
 
-**Results in Tableau:** 
+**Results in Tableau** 
 
 
 
 
 **Analyzed Popular Stations/Top Routes**
-**Results in Tableau**:
+**Results in Tableau**
 
 
 
