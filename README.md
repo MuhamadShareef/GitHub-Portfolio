@@ -93,24 +93,31 @@ To uncover these insights, I’ll be using Cyclistic’s **historical trip data*
 **Guiding Questions**
 
 **1- Where is your data located?**
+
 The data is stored in a publicly accessible location and can be downloaded directly from Cyclistic’s partner site here.
 
 **2- How is the data organized?**
+
 The dataset is organized in CSV files, with each file representing trip data for a specific month. Each file contains columns such as trip start time, end time, ride duration, starting station, ending station, and rider type (casual or member).
 
 **3- Are there issues with bias or credibility in this data? Does your data ROCCC?**
+
 The data is provided by a reputable company, Motivate International Inc., ensuring credibility. However, potential biases may exist, such as underrepresentation of certain groups or missing data for specific timeframes or stations. I will evaluate the data to ensure it meets ROCCC standards (Reliable, Original, Comprehensive, Current, and Cited).
 
 **4- How are you addressing licensing, privacy, security, and accessibility?**
+
 The dataset is shared under an open license, allowing public use. Privacy concerns are minimal, as the data is aggregated and anonymized. I will handle the data responsibly and ensure it remains secure throughout the analysis process.
 
 **5- How did you verify the data’s integrity?**
+
 I’ll review the dataset for consistency by checking for null values, duplicates, and outliers. I’ll also cross-reference the file metadata (e.g., date ranges) to ensure completeness.
 
 **6- How does it help you answer your question?**
+
 The dataset contains information about ride patterns, durations, and rider types, which directly aligns with the questions I’m answering, such as differences in usage between casual riders and annual members.
 
 **7- Are there any problems with the data?**
+
 Possible issues include missing data for certain trips, errors in ride duration (e.g., negative or unrealistically long times), and discrepancies in station names. These issues will be addressed during the cleaning process.
 
 
