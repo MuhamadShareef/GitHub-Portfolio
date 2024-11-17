@@ -268,6 +268,7 @@ Max_date
 **How do annual members and casual riders use Cyclistic bikes differently?**
 
 **Results:** 
+
 ![images](images/2-how-do-annual-members-and-casual-riders-use-Cyclistic-bikes-differently.png)
 
 Casual Rider Average Time
