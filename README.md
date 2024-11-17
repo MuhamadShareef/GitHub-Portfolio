@@ -41,22 +41,12 @@ This repository contains SQL scripts for various stages of data analysis. Below 
 
 ## Description of Files
 
-- **01-Data Combining.sql.txt**: Combines data from multiple sources for further analysis.
-- **02-Data Exploration.sql**: Explores the data to identify trends and anomalies.
-- **03-Data Cleaning.sql.txt**: Cleans the data to ensure accuracy and consistency.
-- **04-Data Analysis.sql.txt**: Performs detailed data analysis.
+- **-Data Combining.sql.txt**: Combines data from multiple sources for further analysis.
+- **-Data Exploration.sql**: Explores the data to identify trends and anomalies.
+- **-Data Cleaning.sql.txt**: Cleans the data to ensure accuracy and consistency.
+- **-Data Analysis.sql.txt**: Performs detailed data analysis.
 
 ---
-
-### Step 3: Commit the Changes
-1. Scroll down and add a commit message like `Added links to SQL scripts in README`.
-2. Click **Commit changes**.
-
----
-
-### Result
-Your README file will now contain clickable links to each SQL file. Visitors can click on the links to view the content of the SQL scripts directly in their browser.
-
 
 ## Introduction 
 In this case study, I’m going to be solving many real world scenarios a data analyst would solve. I’ll be working for Cyclistic, a fictional bike-share company, collaborating with various stakeholders.
