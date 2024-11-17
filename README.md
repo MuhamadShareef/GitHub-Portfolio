@@ -292,57 +292,14 @@ I performed **group comparisons** between casual riders and annual members based
 
 **Trip length by rider** 
 
-rider_type
-avg_trip_length_minutes
-max_trip_length_minutes
-min_trip_length_minutes
-total_trips
-Casual
-45.4
-55683
-1
-1,334,151
-Member
-15.7
-58720
-1
-1,907,130
+![images](images/4-trip-length-by-rider.png)
 
 
 I separated data by **weekdays** and **weekends**, and compared the **average trip length** and **total rides** for each group. This analysis will allow us to assess whether casual riders have longer or shorter trips compared to members, and whether this behavior differs on weekends.
 
 **Trip length by rider on weekends vs weekday** 
 
-rider_type
-day_type
-avg_trip_length_minutes
-max_trip_length_minutes
-min_trip_length_minutes
-total_trips
-Casual
-Weekend
-48.9
-51145
-1
-563,894
-Member
-Weekend
-17.7
-58720
-1
-545,940
-Casual
-Weekday
-42.9
-55683
-1
-770,257
-Member
-Weekday
-14.9
-41271
-1
-1,361,190
+![images](images/5-trip-length-by-rider-on-weekends-vs-weekday.png)
 
 
 
@@ -350,7 +307,7 @@ Weekday
 
 **Results in Tableau**  
 
-
+![images](images/6-total-number-of-trips-per-month-by-rider.png)
 
 As we can see, the most popular months are to no surprise, the summer months which start to peak around July and August. 
 
@@ -358,129 +315,16 @@ As we can see, the most popular months are to no surprise, the summer months whi
 **Total number of trips per week**
 Based on the analysis, the most popular week for riders is week 41. And we see the most popular weeks to ride on are between July through October. 
 
-trip_year
-trip_week
-total_trips
-2020
-41
-86583
-2020
-42
-55374
-2020
-43
-52797
-2020
-44
-77732
-2020
-45
-64191
-2020
-46
-44022
-2020
-47
-28715
-2020
-48
-32120
-2020
-49
-29703
-2020
-50
-27780
-2020
-51
-20027
-2020
-52
-12410
-2021
-0
-2876
-2021
-1
-22726
-2021
-2
-22961
-2021
-3
-19528
-2021
-4
-15050
-2021
-5
-9306
-2021
-6
-6942
-2021
-7
-3820
-2021
-8
-20274
-2021
-9
-29320
+![images](images/7-total-number-of-trips-per-week-1.png)
 
 
 
-day_of_week
-rider_type
-total_trips
-Sunday
-casual
-250344
-Sunday
-member
-251416
-Monday
-casual
-142332
-Monday
-member
-252664
-Tuesday
-casual
-136588
-Tuesday
-member
-269439
-Wednesday
-casual
-148641
-Wednesday
-member
-289401
-Thursday
-casual
-156446
-Thursday
-member
-284598
-Friday
-casual
-197030
-Friday
-member
-290165
-Saturday
-casual
-319858
-Saturday
-member
-305769
-
+![images](images/7-total-number-of-trips-per-week-2.png)
 
 
 **Results in Tableau** 
 
-
+![images](images/8-results-in-tableau-png.png)
 
 
 **Analyzed peak hours of usage by rider type**
@@ -489,62 +333,12 @@ member
 Conducted a peak hour usage analysis to identify the most active hours for casual riders and annual members. By extracting the hour from trip start times and grouping data by rider type, I determined that casual riders peak between 4 PM and 7 PM, while members exhibit a similar pattern, with a more pronounced peak at 5 PM. This insight highlights differences in rider behavior and provides a foundation for targeted marketing or operational adjustments.
 
 **Top Results:** 
-Member Riders
-hour_of_day
-rider_type
-ride_count
-17
-member
-205463
-18
-member
-178600
-16
-member
-171213
-15
-member
-142325
-12
-member
-128790
-13
-member
-128010
-14
-member
-127866
 
-
-Casual Riders
-hour_of_day
-rider_type
-ride_count
-17
-casual
-133180
-18
-casual
-120467
-16
-casual
-119631
-15
-casual
-112816
-14
-casual
-107190
-13
-casual
-101074
-12
-casual
-92961
+![images](images/9-analyzed-peak-hours-of-usage-by-rider-type-png.png)
 
 **Results in Tableau** 
 
-
+![images](images/10-results-in-tableau-png.png)
 
 
 **Average ride length per month**
@@ -553,114 +347,13 @@ casual
 The analysis reveals interesting trends in average ride lengths across the months. The longest average ride lengths occur in July, which aligns with expectations due to the warm, summer weather encouraging outdoor activities. The trend begins to pick up in April, continues through May and June, and peaks in July. After July, ride lengths start to decline gradually as the year progresses into cooler months.
 
 
-month_name
-month_number
-rider_type
-avg_ride_length_minutes
-total_trips
-Jan
-1
-member
-11.67
-68039
-casual
-26.07
-14583
-Feb
-2
-member
-14.54
-33793
-casual
-47.22
-8508
-Mar
-3
-member
-13.35
-128349
-casual
-38.28
-75059
-Apr
-4
-member
-21.16
-60236
-casual
-72.44
-23427
-May
-5
-casual
-50.48
-86072
-member
-19.38
-111447
-Jun
-6
-casual
-51.15
-153113
-member
-18.32
-184996
-Jul
-7
-member
-17.35
-276181
-casual
-59.23
-266156
-Aug
-8
-member
-16.36
-318257
-casual
-44.37
-278085
-Sep
-9
-member
-15.03
-278976
-casual
-38.39
-212122
-Oct
-10
-member
-13.66
-211708
-casual
-31.25
-120597
-Nov
-11
-casual
-33.33
-72115
-member
-13.18
-147089
-Dec
-12
-casual
-27.33
-24314
-member
-11.99
-88059
-
+![images](images/11-average-ride-length-per-month-png.png)
 
 
 **Results in Tableau**
 
 
-
+![images](images/12-results-in-tableau-png.png)
 
 
 
@@ -670,146 +363,52 @@ member
 **Results:** 
 Ride lengths are longer during weekends, suggesting more recreational use of bikes, whereas weekdays see shorter, purpose-driven rides. These insights could inform targeted promotions or service adjustments based on rider behavior.
 
-day_of_week
-avg_ride_length_minutes
-Sunday
-34.56
-Monday
-25.91
-Tuesday
-23.55
-Wednesday
-23.66
-Thursday
-25.01
-Friday
-26.63
-Saturday
-32.76
+![images](images/13-average-ride-length-per-day-of-week-1-png.png)
 
 
+![images](images/13-average-ride-length-per-day-of-week-2-png.png)
 
 
-
-
+![images](images/13-average-ride-length-per-day-of-week-3-png.png)
 
 **Results in Tableau** 
 
-
+![images](images/13-results-in-tableau-png.png)
 
 
 **Analyzed Popular Stations/Top Routes**
 **Results in Tableau**
 
+![images](images/14-analyzed-popular-stations-top-routes-1-png.png)
 
+![images](images/14-analyzed-popular-stations-top-routes-2-png.png)
 
-
-**Results:** 
-1. Aggregate by Top Stations or Routes: results-20241112-133926
-
-
-**Analyze by Rider Type: Member
-Results:** 
-2. Analyze by Rider Type: Member - results-20241112-134338
 
 
 **Rider Type: Member**
 **Top 10 Most Popular Stations/Routes** 
-Rider Type: Member
-start_station_name
-end_station_name
-number_of_rides
-MLK Jr Dr & 29th St
-State St & 33rd St
-1259
-State St & 33rd St
-MLK Jr Dr & 29th St
-1119
-Clark St & Elm St
-Clark St & Elm St
-1100
-Lake Shore Dr & Wellington Ave
-Lake Shore Dr & Wellington Ave
-1080
-Lakefront Trail & Bryn Mawr Ave
-Lakefront Trail & Bryn Mawr Ave
-1043
-Lake Shore Dr & Belmont Ave
-Lake Shore Dr & Belmont Ave
-1033
-Burnham Harbor
-Burnham Harbor
-1026
-Theater on the Lake
-Theater on the Lake
-983
-Dearborn St & Erie St
-Dearborn St & Erie St
-971
-Lake Shore Dr & North Blvd
-Lake Shore Dr & North Blvd
-965
 
+
+![images](images/15-top-10-most-popular-stations-routes-png.png)
 
 
 **Result in Tableau**:
 Top Stations by Number of Rides (Horizontal Bar Chart)
 
+![images](images/16-results-in-tableau-top-stations-by-number-of-rides-horizontal-bar-chart-png.png)
 
-
-
-
-
-
-**Analyze by Rider Type: Casual
-Results:**
-2. Analyze by Rider Type: Casual - results-20241112-134713
 
 
 **Rider Type: Casual**
 **Top 10 Most Popular Stations/Routes** 
 
 
-Rider Type: Casual
-start_station_name
-end_station_name
-number_of_rides
-Streeter Dr & Grand Ave
-Streeter Dr & Grand Ave
-6093
-Lake Shore Dr & Monroe St
-Lake Shore Dr & Monroe St
-5934
-Millennium Park
-Millennium Park
-4998
-Buckingham Fountain
-Buckingham Fountain
-4844
-Indiana Ave & Roosevelt Rd
-Indiana Ave & Roosevelt Rd
-3887
-Michigan Ave & Oak St
-Michigan Ave & Oak St
-3576
-Fort Dearborn Dr & 31st St
-Fort Dearborn Dr & 31st St
-3161
-Michigan Ave & 8th St
-Michigan Ave & 8th St
-3134
-Shore Dr & 55th St
-Shore Dr & 55th St
-2993
-Theater on the Lake
-Theater on the Lake
-2878
-
+![images](images/17-top-10-most-popular-stations-routes-casual-png.png)
 
 
 **Results in Tableau**:
 
-
+![images](images/17-result-in-tableau-png.png)
 
 
 
@@ -817,36 +416,35 @@ Theater on the Lake
 
 **Aggregate Popular Routes**
 Combined start and end station names into a single route and analyzed their popularity.
-Results: 
-3. Aggregate Popular Routes: results-20241112-134927
+
+
 **Results in Tableau**:
 
+![images](images/18-aggregate-popular-routes-results-in-tableau-png.png)
 
 
 **Summarize Results by Start Station**
 
 Aggregated the data to see the total rides originating or ending at each station.
-Results: 
-4. Summarize Results by Start Station: results-20241112-135208
-Tableau:
 
 
+**Results in Tableau**:
+
+![images](images/19-summarize-results-by-start-station-results-in-tableau-png.png)
 
 
 **Summarize Results by End Station** 
 
-**Results:**
-
-4. Summarize Results by End Station: results-20241112-135432
 
 **Results in Tableau**:
 
+![images](images/20-summarize-results-by-end-station-results-in-tableau-png.png)
 
 
 ## Step 5: Share 
 
-- **SQL Query:**
-- **Data Visualization:** 
+- **SQL Query:** [insert-link]
+- **Data Visualization:** [insert-link]
 
 Now that the data is processed, cleaned, and analyzed we can share our findings. I queried multiple data sets for the analysis and visualized them in Tableau. To answer the main question: How do annual members and casual riders use Cyclistic bikes differently?
 
@@ -875,6 +473,8 @@ Casual ridersâ€™ trips peak between 4 PM and 7 PM, which overlaps with membersâ€
 **- Recurring Behavior:**
 
 Members exhibit consistent behavior in ride frequency and timing, indicating habitual use, while casual riders demonstrate irregular, event-driven patterns.
+
+![images](images/21-6-recurring-behavior-png.png)
 
 
 ## Step 6: Act 
