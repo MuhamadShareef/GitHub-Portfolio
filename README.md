@@ -28,18 +28,35 @@ Data Analyst
 
 ## Quick links:
 
+# SQL Code Repository
 
+This repository contains SQL scripts for various stages of data analysis. Below are the available files:
 
+## Files
 
+1. [01-Data Combining.sql.txt](./01-Data%20Combining.sql.txt)
+2. [02-Data Exploration.sql](./02-%20Data%20Exploration.sql)
+3. [03-Data Cleaning.sql.txt](./03%20-%20Data%20Cleaning.sql.txt)
+4. [04-Data Analysis.sql.txt](./04-%20Data%20Analysis.sql.txt)
 
+## Description of Files
 
+- **01-Data Combining.sql.txt**: Combines data from multiple sources for further analysis.
+- **02-Data Exploration.sql**: Explores the data to identify trends and anomalies.
+- **03-Data Cleaning.sql.txt**: Cleans the data to ensure accuracy and consistency.
+- **04-Data Analysis.sql.txt**: Performs detailed data analysis.
 
+---
 
+### Step 3: Commit the Changes
+1. Scroll down and add a commit message like `Added links to SQL scripts in README`.
+2. Click **Commit changes**.
 
-- [File 1: 01-Data Combining.sql](-- 01-Data Combining.sql.txt)
-- [File 2: 02- Data Exploration.sql](-- 02- Data Exploration.sql)
-- [File 3: 03- Data Cleaning.sql](https://github.com/your-username/your-repository/blob/main/Query3.txt)
-- [File 4: 04- Data Analysis.sql](https://github.com/your-username/your-repository/blob/main/Query3.txt)
+---
+
+### Result
+Your README file will now contain clickable links to each SQL file. Visitors can click on the links to view the content of the SQL scripts directly in their browser.
+
 
 ## Introduction 
 In this case study, I’m going to be solving many real world scenarios a data analyst would solve. I’ll be working for Cyclistic, a fictional bike-share company, collaborating with various stakeholders.
