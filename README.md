@@ -27,13 +27,19 @@ Data Analyst
 
 
 ## Quick links:
-01-Data Combining.sql
 
-02- Data Exploration.sql
 
-03- Data Cleaning.sql
 
-04- Data Analysis.sql
+
+
+
+
+
+
+- [File 1: 01-Data Combining.sql](-- 01-Data Combining.sql.txt)
+- [File 2: 02- Data Exploration.sql](-- 02- Data Exploration.sql)
+- [File 3: 03- Data Cleaning.sql](https://github.com/your-username/your-repository/blob/main/Query3.txt)
+- [File 4: 04- Data Analysis.sql](https://github.com/your-username/your-repository/blob/main/Query3.txt)
 
 ## Introduction 
 In this case study, I’m going to be solving many real world scenarios a data analyst would solve. I’ll be working for Cyclistic, a fictional bike-share company, collaborating with various stakeholders.
