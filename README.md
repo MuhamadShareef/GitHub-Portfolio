@@ -1,5 +1,3 @@
-# GitHub-Portfolio
-
 Muhamad Shareef
 
 Data Analyst 
