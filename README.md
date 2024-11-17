@@ -253,7 +253,7 @@ I start by examining key metrics like the **average ride length, trip count**, a
 **Analyzed the minimum and maximum dates in the dataset.**
 **Results:**
 
-![](1. min max dates.png)
+![images](images/1-min-max-dates.png)
 
 
 
