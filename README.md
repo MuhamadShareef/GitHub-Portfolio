@@ -9,8 +9,6 @@ Data Analyst
 
 
 
-## Introduction 
-
 ### Step 1: Ask
 
 ### Step 2: Prepare
