@@ -281,22 +281,8 @@ Member Rider Average Time
 
 I segmented the data by day of the week (weekdays vs. weekends) to uncover if casual riders tend to take longer trips on weekends compared to weekdays, and compare this to annual members’ behavior.
 
+![images](images/3-explored-whether-casual-riders-are-more-likely-to-ride-on-weekends-compared-to-members.png)
 
-rider_type
-day_type
-total_rides
-Casual
-Weekday
-831,614
-Member
-Weekday
-1,468,833
-Member
-Weekend
-590,539
-Casual
-Weekend
-598,762
 
 
 
