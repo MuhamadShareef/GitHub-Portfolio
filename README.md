@@ -234,16 +234,11 @@ Reference: 04- Data Analysis.sql
 I start by examining key metrics like the **average ride length, trip count**, and **ride type distribution**. This helps identify general trends and gives us a broad overview of the dataset.
 
 **Analyzed the minimum and maximum dates in the dataset.**
+
 **Results:**
 
 ![images](images/1-min-max-dates.png)
 
-
-
-Min_date
-Max_date
-2020-04-01
-2021-04-06
 
 
 
