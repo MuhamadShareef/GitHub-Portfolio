@@ -187,24 +187,7 @@ To make the query more efficient and comprehensive, especially considering varia
 
 Ensured all date and time columns are in the correct format and timezone to avoid inconsistencies during the analysis phase. Standardizing these formats will make the analysis process more reliable and easier to perform.
 
-SELECT 
-  CAST(ride_id AS STRING) AS ride_id,
-  CAST(rideable_type AS STRING) AS rideable_type,
-  TIMESTAMP(started_at) AS started_at,
-  TIMESTAMP(ended_at) AS ended_at,
-  CAST(start_station_name AS STRING) AS start_station_name,
-  CAST(start_station_id AS STRING) AS start_station_id,
-  CAST(end_station_name AS STRING) AS end_station_name,
-  CAST(end_station_id AS STRING) AS end_station_id,
-  CAST(start_lat AS FLOAT64) AS start_lat,
-  CAST(start_lng AS FLOAT64) AS start_lng,
-  CAST(end_lat AS FLOAT64) AS end_lat,
-  CAST(end_lng AS FLOAT64) AS end_lng,
-  CAST(member_casual AS STRING) AS member_casual
-FROM `leafy-sanctuary-412122.cyclistic_data.cyclistic_data_2019_q010`
-
-UNION ALL
--- Repeat for all remaining tables
+![images](images/4-ensuring-uniformity-across-all-tables.PNG)
 
 
 **Additional Steps in Data Cleaning and Preparation**
