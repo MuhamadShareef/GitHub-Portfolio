@@ -28,15 +28,12 @@ Data Analyst
 
 ## Quick links:
 
-# SQL Code Repository
-
-This repository contains SQL scripts for various stages of data analysis. Below are the available files:
-
-## Files
-
 [01-Data Combining.sql.txt](-01-data-combining.sql.txt)
+
 [02-Data Exploration.sql.txt](-02-data-exploration.sql.txt)
+
 [03-Data Cleaning.sql.txt](-03-data-cleaning.sql.txt)
+
 [04-Data Analysis.sql.txt](-04-data-analysis.sql.txt)
 
 
