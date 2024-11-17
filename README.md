@@ -403,7 +403,7 @@ Combined start and end station names into a single route and analyzed their popu
 
 **Summarize Results by Start Station**
 
-Aggregated the data to see the total rides originating or ending at each station.
+Aggregated the data to see the total rides originating at each station.
 
 
 **Results in Tableau**:
