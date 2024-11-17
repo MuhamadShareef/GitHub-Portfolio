@@ -35,9 +35,9 @@ This repository contains SQL scripts for various stages of data analysis. Below 
 ## Files
 
 1. [01-Data Combining.sql.txt](-01-data-combining.sql.txt)
-2. [02-Data Exploration.sql](./02-%20Data%20Exploration.sql)
-3. [03-Data Cleaning.sql.txt](./03%20-%20Data%20Cleaning.sql.txt)
-4. [04-Data Analysis.sql.txt](./04-%20Data%20Analysis.sql.txt)
+2. [02-Data Exploration.sql.txt](-02-data-exploration.sql.txt)
+3. [03-Data Cleaning.sql.txt](-03-data-cleaning.sql.txt)
+4. [04-Data Analysis.sql.txt](-04-data-analysis.sql.txt)
 
 ## Description of Files
 
